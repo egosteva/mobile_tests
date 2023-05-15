@@ -21,8 +21,8 @@ public class SearchTests {
 //        DesiredCapabilities caps = new DesiredCapabilities();
 //
 //        // Set your access credentials
-//        caps.setCapability("browserstack.user", "qagurumobile_piB8or");
-//        caps.setCapability("browserstack.key", "dqCgQsyscHYt4iEy2vUi");
+//        caps.setCapability("browserstack.user", "elenagosteva_YsZjEc");
+//        caps.setCapability("browserstack.key", "nG4yqzYHbrwsAi8zwNJr");
 //
 //        // Set URL of the application under test
 //        caps.setCapability("app", "bs://c700ce60cf13ae8ed97705a55b8e022f13c5827c");
