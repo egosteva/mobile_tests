@@ -9,7 +9,8 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 import static io.qameta.allure.Allure.step;
 
-public class SearchTests extends TestBase {
+public class WikipediaTests extends TestBase {
+
     @Test
     @DisplayName("Successful search")
     void successfulSearchTest() {
@@ -19,6 +20,17 @@ public class SearchTests extends TestBase {
         });
         step("Verify content found", () ->
                 $$(AppiumBy.id("org.wikipedia.alpha:id/page_list_item_container"))
+                        .shouldHave(sizeGreaterThan(0)));
+    }
+
+    @Test
+    @DisplayName("Open article from main page")
+    void openArticleFromMainPageTest() {
+        step("Click on article header ", () -> {
+            $(AppiumBy.id("org.wikipedia.alpha:id/horizontal_scroll_list_item_text")).click();
+        });
+        step("Check opening", () ->
+                $$(AppiumBy.id("org.wikipedia.alpha:id/view_news_fullscreen_story_text"))
                         .shouldHave(sizeGreaterThan(0)));
     }
 }
