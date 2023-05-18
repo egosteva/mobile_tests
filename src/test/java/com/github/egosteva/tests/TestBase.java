@@ -27,11 +27,8 @@ public class TestBase {
     @AfterEach
     void afterEach() {
         String sessionId = sessionId().toString();
-//        Attach.screenshotAs("Last screenshot"); // todo
         Attach.pageSource();
-
         closeWebDriver();
-
         Attach.addVideo(sessionId);
     }
 }
