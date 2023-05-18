@@ -18,11 +18,11 @@ public class TestBase {
         Configuration.browserSize = null;
     }
 
-    @BeforeEach
-    void addListener() {
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-        open();
-    }
+   @BeforeEach
+   void addListener() {
+       SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+       open();
+   }
 
     @AfterEach
     void afterEach() {

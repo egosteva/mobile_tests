@@ -27,6 +27,7 @@ public class BrowserstackDriver implements WebDriverProvider {
         // Specify device and os_version for testing
         mutableCapabilities.setCapability("device", "Google Pixel 3");
         mutableCapabilities.setCapability("os_version", "9.0");
+        mutableCapabilities.setCapability("browserstack.networkLogs","true");
 
         // Set other BrowserStack capabilities
         mutableCapabilities.setCapability("project", "First Java Project");
