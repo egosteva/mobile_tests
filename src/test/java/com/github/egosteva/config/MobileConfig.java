@@ -17,32 +17,4 @@ public interface MobileConfig extends Config {
     @Key("os_version")
     @DefaultValue("9.0")
     String getOsVersion();
-
-    @Key("networkLogs")
-    @DefaultValue("true")
-    Boolean networkLogs();
-
-    @Key("project")
-    @DefaultValue("First Java Project")
-    String getProjectName();
-
-    @Key("build")
-    @DefaultValue("browserstack-build-1")
-    String getBuildName();
-
-    @Key("name")
-    @DefaultValue("first_test")
-    String getTestName();
-
-    @Key("remoteUrl")
-    @DefaultValue("https://hub.browserstack.com/wd/hub")
-    String getRemoteUrl();
-
-    @Key("browserstack.user")
-    @DefaultValue("elenagosteva_YsZjEc")
-    String getUser();
-
-    @Key("browserstack.key")
-    @DefaultValue("nG4yqzYHbrwsAi8zwNJr")
-    String getKey();
 }
